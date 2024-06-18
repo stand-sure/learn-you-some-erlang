@@ -28,6 +28,7 @@ dolphin2() ->
     _ -> io:format("Heh, we're smarter than you humans.~n")
   end.
 
+-spec dolphin3() -> any().
 dolphin3() ->
   receive
     {From, do_a_flip} -> From ! "How about no?",
